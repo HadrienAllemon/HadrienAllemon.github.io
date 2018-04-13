@@ -57,8 +57,9 @@ function moveAI(){
 	$("td[data-col='"+ move.col +"'][data-row='"+ move.row +"']").addClass(CPU_T);
 	newChar(move.col,move.row);
 	winner = checkWinner($("table"))
+	
 	if (winner){$(".winBox").css("display","inline");$("span").html(winner.toUpperCase());$("span").css("color",winner==="o"?"green":"red")
-		} else if (winner == null){$("winBox").css("display","inline");$(".winBox > p").html("Null !!")};
+		} else if (winner == null){$(".winBox").css("display","inline");$(".winBox > p").html("<span class='winner'></span>Null !!")};
 	toggleTurn();
 	}
 	
@@ -268,7 +269,7 @@ $("td canvas").on("click",function(event){
 		$(".winBox").css("display","inline");
 		$("p > span").html(winner.toUpperCase);
 		$("span").css("color",winner==="o"?"green":"red");
-		} else if (winner == null){$(".winBox").css("display","inline");$(".winBox > p").html("Null !!")};
+		} else if (winner == null){$(".winBox").css("display","inline");$(".winBox > p").html("<span class='winner'></span>Null !!")};
 	toggleTurn();
 	if (turn === CPU_T&&winner===false){moveAI()};
 	
@@ -368,7 +369,7 @@ $(".character > canvas").on("click",function(){
 	c.forEach( val => val.imageSmoothingEnabled = false);
 	if (CPU_T===turn){moveAI()}
 });
-(function animate(){
+function animate(){
 
 	requestAnimationFrame(animate);
 	c.forEach(val => val.clearRect(0,0,val.canvas.width,val.canvas.height));
@@ -382,10 +383,10 @@ $(".character > canvas").on("click",function(){
 		winner = -1;
 	}
 	
-})()
+}
 
+$(window).on("load",animate())
 $(".reset").on("click",function(){
-	debugger;
 	turn = "o";
     PLAYER_T =undefined; 
     CPU_T = undefined;
@@ -394,6 +395,7 @@ $(".reset").on("click",function(){
 	character=[];
 	$(".winBox").css("display","none")
 	$("table").css("display","none");
+	$(".winBox > p").html("<span class='winner'></span>  Wins !!")
 	$(".character").css("display","flex");
 	$("td").each((index,val)=>{
 		$(val).removeAttr("class")
