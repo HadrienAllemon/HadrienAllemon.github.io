@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var im = new Image()
-	im.src= "crossCharanimIdle.png"
+	im.src= "crosscharanimidle.png"
 	console.log(im);
 /*
 var turn = "o";
