@@ -1,5 +1,8 @@
 $(document).ready(function(){
-
+	var im = new Image()
+	im.src= "crossCharanimIdle.png"
+	console.log(im);
+/*
 var turn = "o";
 var PLAYER_T =undefined;
 var CPU_T = undefined;
@@ -407,7 +410,7 @@ $(".reset").on("click",function(){
 	})
 	
 })
-
+*/
 })
 
 
