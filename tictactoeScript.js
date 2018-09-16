@@ -221,17 +221,17 @@ function checkWinner($grid) {
 	
 
 var xSprites = {
-	idle : "img/crossCharanimIdle.png",
-	pance0 : "img/crossCharanimPance0.png",
-	pance1 : "img/crossCharanimPance1.png",
-	celebrate : "img/crossCharanimCelebrate1.png"
+	idle : "crossCharanimIdle.png",
+	pance0 : "crossCharanimPance0.png",
+	pance1 : "crossCharanimPance1.png",
+	celebrate : "crossCharanimCelebrate1.png"
 }
 
 var oSprites = {
-	idle : "img/roundCharanimIdle.png",
-	pance0 : "img/roundCharanimPance1.png",
-	pance1 : "img/roundCharanimPance1.png",
-	celebrate : "img/roundCharanimCelebrate.png"
+	idle : "roundCharanimIdle.png",
+	pance0 : "roundCharanimPance1.png",
+	pance1 : "roundCharanimPance1.png",
+	celebrate : "roundCharanimCelebrate.png"
 }
 
 spriteSelect = {
@@ -323,7 +323,7 @@ function Bird(x,y,dx,dy,con){
 	this.y = y;
 	var step  = 0;
 	var sprites = new Image();
-	sprites.src = "img/bird.png";
+	sprites.src = "bird.png";
 	this.sprite = sprites;
 	this.draw = function(){
 		
