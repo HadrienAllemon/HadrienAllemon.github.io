@@ -1,9 +1,547 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<body>
-<a href = 'tictactoe/tictactoe.html'>Test</a>
-<a href = 'test2.html'>Test.5</a>
-</body>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+
+  <title>Reflux HTML CSS Template</title>
+  <!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+  <link rel="stylesheet" href="assets/css/owl.css" />
+  <link rel="stylesheet" href="assets/css/lightbox.css" />
 </head>
+
+<body>
+  <div id="page-wraper">
+    <!-- Sidebar Menu -->
+    <div class="responsive-nav">
+      <i class="fa fa-bars" id="menu-toggle"></i>
+      <div id="menu" class="menu">
+        <i class="fa fa-times" id="menu-close"></i>
+        <div class="container">
+          <div class="image">
+            <a href="#"><img src="img/pp.png" alt="" /></a>
+          </div>
+          <div class="author-content">
+            <h4>Hadrien Allemon</h4>
+            <span>Web Developer</span>
+          </div>
+          <nav class="main-nav" role="navigation">
+            <ul class="main-menu">
+              <li><a href="#section1">About Me</a></li>
+              <li><a href="#section2">My skills</a></li>
+              <li><a href="#section3">My Work</a></li>
+              <li><a href="#section4">Contact Me</a></li>
+            </ul>
+          </nav>
+          <div class="social-network">
+            <ul class="soial-icons">
+              <li>
+                <a href="https://www.linkedin.com/in/hadrien-allemon/"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/HadrienAllemon/"><i class="fa fa-github"></i></a>
+              </li>
+              <li>
+                <a href="./img/HadrienAllemon-2.pdf" target="_blank" >CV</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section about-me" data-section="section1">
+      <div class="container">
+        <div class="section-heading">
+          <h2>About Me</h2>
+          <div class="line-dec"></div>
+          <span>
+            I am a seasoned web developer based in the Walloon Brabant in Belgium. I started programming as a teenager,
+            making game during my free time. I liked it so much that I decided to make it my daily job, I am now
+            specialised web development.
+            Feel free to browse my portfolio. Take your time and come back to me if you are interested in working with
+            me !
+          </span>
+          <br/>
+          <br/>
+          <div class="white-button text-center">
+            <a href="./img/HadrienAllemon-2.pdf" target="_blank">My Resume</a>
+          </div>
+        </div>
+        <div class="section-block">
+          <div class="row">
+            <!-- <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/left-image.jpg" alt="" />
+                </div>
+              </div> -->
+            <div class="col-md-12">
+              <div class="right-text">
+                <h2>My philosophies</h2>
+                <div class="line-dec"></div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h5> Fail fast , Learn Faster</h5>
+                    <p>
+                      Through frequent R&D in my career, I learned that many steps never make it into the final build.
+                      Failing fast—identifying inconsistencies and issues early—keeps projects on track and bug-free.
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <h5>Simplicity Scales</h5>
+                    <p>
+                      The best code isn't the most complex—it's the most maintainable. I prioritize clear, efficient
+                      solutions that stand the test of time.
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <h5>Code is a Conversation</h5>
+                    <p>
+                      Good code speaks for itself, but great development is a team effort. I
+                      write
+                      clean, readable code that makes collaboration seamless and ensure my teammates have all the
+                      informations needed about the features I implement
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="right-image-post">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="left-text">
+                <h4>Sed sagittis rhoncus velit</h4>
+                <p>
+                  Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Vestibulum fermentum
+                  eleifend nibh, vitae sodales elit finibus pretium.
+                  Suspendisse potenti. Ut sollicitudin risus a sollicitudin
+                  semper.
+                </p>
+                <div class="white-button">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right-image">
+                <img src="assets/images/right-image.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="section my-services" data-section="section2">
+      <div class="container">
+        <div class="section-heading">
+          <h2>What am I good at ?</h2>
+          <div class="line-dec"></div>
+          <span>Though I specialise in front-end development, I used and learned a variety of technologies during my
+            carreer. You can find a non exhaustive list right below</span>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="first-service-icon service-icon"></div>
+                </div>
+                <div class="col-md-8">
+                  <h4>Front End</h4>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  <div class="skillItem">HTML</div>
+                </li>
+                <li>
+                  <div class="skillItem">CSS</div>
+                </li>
+                <li>
+                  <div class="skillItem">JavaScript</div>
+                </li>
+                <li>
+                  <div class="skillItem">TypeScript</div>
+                </li>
+                <li>
+                  <div class="skillItem">React</div>
+                </li>
+                <li>
+                  <div class="skillItem">JQuery</div>
+                </li>
+                <li>
+                  <div class="skillItem">Redux/Context</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="first-service-icon service-icon"></div>
+                </div>
+                <div class="col-md-8">
+                  <h4>Back End</h4>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  <div class="skillItem">Node</div>
+                </li>
+                <li>
+                  <div class="skillItem">Python</div>
+                </li>
+                <li>
+                  <div class="skillItem">ASP.NET</div>
+                </li>
+                <li>
+                  <div class="skillItem">MySQL</div>
+                </li>
+                <li>
+                  <div class="skillItem">T-SQL</div>
+                </li>
+                <li>
+                  <div class="skillItem">PLSQL</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="first-service-icon service-icon"></div>
+                </div>
+                <div class="col-md-8">
+                  <h4>Design</h4>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  <div class="skillItem">Photoshop</div>
+                </li>
+                <li>
+                  <div class="skillItem">AseSprite</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="first-service-icon service-icon"></div>
+                </div>
+                <div class="col-md-8">
+                  <h4>Others</h4>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  <div class="skillItem">GIT</div>
+                </li>
+                <li>
+                  <div class="skillItem">Github</div>
+                </li>
+                <li>
+                  <div class="skillItem">Azure</div>
+                </li>
+                <li>
+                  <div class="skillItem">SharePoint</div>
+                </li>
+                <li>
+                  <div class="skillItem">T-SQL</div>
+                </li>
+                <li>
+                  <div class="skillItem">PLSQL</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section my-work" data-section="section3">
+      <div class="container">
+        <div class="section-heading">
+          <h2>My Work</h2>
+          <div class="line-dec"></div>
+          <span>Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit
+            amet. Duis ac elit vulputate, lobortis arcu quis, vehicula
+            mauris.</span>
+        </div>
+        <div class="row">
+          <div class="isotope-wrapper">
+            <form class="isotope-toolbar">
+              <label><input type="radio" data-type="*" checked="" name="isotope-filter" />
+                <span>All</span></label>
+              <label><input type="radio" data-type="Dev" name="isotope-filter" />
+                <span>Dev</span></label>
+              <label><input type="radio" data-type="Design" name="isotope-filter" />
+                <span>Design</span></label>
+            </form>
+            <div class="isotope-box">
+              <div class="isotope-item" data-type="Dev">
+                <figure class="snip1321">
+                  <img src="img/Amadeus1.png" alt="sq-sample26" />
+                  <figcaption>
+                    <a href="https://github.com/HadrienAllemon/Amadeus" data-title="Caption"><i
+                        class="fa fa-github"></i></a>
+                    <h4>Amadeus</h4>
+                    <span>Amadeus is a discord bot that can play music from youtube and more ! </span>
+                    <ul>
+                      <li>
+                        <div class="skillItem">Node</div>
+                      </li>
+                    </ul>
+                    <!-- <a href="img/Dofus.png"  data-title="Caption"><i
+                      class="fa fa-github"></i></a> -->
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="isotope-item" data-type="Dev">
+                <figure class="snip1321">
+                  <img src="img/Dofus.png" alt="sq-sample26" />
+                  <figcaption>
+                    <a href="https://github.com/HadrienAllemon/test_electron_sniffer" data-title="Caption"><i
+                        class="fa fa-github"></i></a>
+                    <h4>Dofus Sniffer</h4>
+                    <span>An application that sniffs the packages of the game Dofus to display and track certain data
+                    </span>
+                    <ul>
+                      <li>
+                        <div class="skillItem">Node</div>
+                      </li>
+                      <li>
+                        <div class="skillItem">Electron</div>
+                      </li>
+                      <li>
+                        <div class="skillItem">React</div>
+                      </li>
+                    </ul>
+                    <!-- <a href="img/Dofus.png"  data-title="Caption"><i
+                      class="fa fa-github"></i></a> -->
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="isotope-item" data-type="Dev">
+                <figure class="snip1321">
+                  <img src="img/Misumena1.png" alt="sq-sample26" />
+                  <figcaption>
+                    <a href="https://github.com/HadrienAllemon/Project-Misumena"  data-title="Caption"><i
+                        class="fa fa-github"></i></a>
+                    <h4>Project Misumena</h4>
+                    <span>A game built in React and Node, based on a classic board game ! It was the project I used to
+                      learn socket.io </span>
+                    <ul>
+                      <li>
+                        <div class="skillItem">Node</div>
+                      </li>
+                      <li>
+                        <div class="skillItem">Socket.io</div>
+                      </li>
+                      <li>
+                        <div class="skillItem">React</div>
+                      </li>
+                    </ul>
+                    <!-- <a href="img/Dofus.png"  data-title="Caption"><i
+                      class="fa fa-github"></i></a> -->
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="isotope-item" data-type="Dev">
+                <figure class="snip1321">
+                  <img src="img/tictactoe1.png" alt="sq-sample26" />
+                  <figcaption>
+                    <a href="https://github.com/HadrienAllemon/TIC_TAC_TOE"  data-title="Caption"><i
+                        class="fa fa-github"></i></a>
+                    <h4>Tic Tac Toe</h4>
+                    <span>A tic tac toe built during my student year to showcase the Min Max algorithm ! </span>
+                    <ul>
+                      <li>
+                        <div class="skillItem">Jquery</div>
+                      </li>
+                      <li>
+                        <div class="skillItem">JavaScript</div>
+                      </li>
+                      <li>
+                        <div class="skillItem">AseSprite</div>
+                      </li>
+                    </ul>
+                    <!-- <a href="img/Dofus.png"  data-title="Caption"><i
+                      class="fa fa-github"></i></a> -->
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="isotope-item" data-type="Design">
+                <figure class="snip1321">
+                  <img src="img/couvRavage2.fb2acd96.png" alt="sq-sample26" />
+                  <figcaption>
+                    <a href="https://docs.wixstatic.com/ugd/7b6eb2_1e6bfb8a90d04e2483b1b2be233d3f65.pdf"  data-title="Caption"><i
+                        class="fa fa-search"></i></a>
+                    <h4>Ravage 15th issue</h4>
+                    <span>I designed the 15th issue of the magazine Ravage </span>
+                    <ul>
+                      <li>
+                        <div class="skillItem">Photoshop</div>
+                      </li>
+                    </ul>
+                    <!-- <a href="img/Dofus.png"  data-title="Caption"><i
+                      class="fa fa-github"></i></a> -->
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="isotope-item" data-type="Design">
+                <figure class="snip1321">
+                  <img src="img/ravage2.png" alt="sq-sample26" />
+                  <figcaption>
+                    <a href="https://docs.wixstatic.com/ugd/7b6eb2_2c140c1f199b4ac98ce1d9fd63e1058b.pdf"  data-title="Caption"><i
+                        class="fa fa-search"></i></a>
+                    <h4>Ravage 14th issue</h4>
+                    <span>I designed the 14th issue of the magazine Ravage </span>
+                    <ul>
+                      <li>
+                        <div class="skillItem">Photoshop</div>
+                      </li>
+                    </ul>
+                    <!-- <a href="img/Dofus.png"  data-title="Caption"><i
+                      class="fa fa-github"></i></a> -->
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-me" data-section="section4">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Contact Me</h2>
+          <div class="line-dec"></div>
+          <span>If you want to know more about me, feel free to contact me :</span>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+
+            <h4> By phone</h4>
+            <div class="line-dec"></div>
+
+            <h3> <i class="fa fa-phone"></i> +32 476 02 48 01</h3>
+          </div>
+          <div class="col-md-6">
+
+            <h4> ... or by email</h4>
+            <div class="line-dec"></div>
+
+            <h3> <i class="fa fa-envelope"> </i>hadrienallemon@gmail.com</h3>
+          </div>
+        </div>
+
+      </div>
+      <div class="quote">
+        <div class="row">
+          <div class="col-md-2 center-text">
+            <i class="fa fa-quote-left"> </i>
+          </div>
+          <div class="col-md-10">
+            <p>`A dream doesn't become reality through magic; it takes sweat, determination and hard work.`</p>
+            <p>- Colin Powell</p>
+          </div>
+        </div>
+     
+      </div>
+    </section>
+  </div>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    //according to loftblog tut
+    $(".main-menu li:first").addClass("active");
+
+    var showSection = function showSection(section, isAnimate) {
+      var direction = section.replace(/#/, ""),
+        reqSection = $(".section").filter(
+          '[data-section="' + direction + '"]'
+        ),
+        reqSectionPos = reqSection.offset().top - 0;
+
+      if (isAnimate) {
+        $("body, html").animate(
+          {
+            scrollTop: reqSectionPos
+          },
+          800
+        );
+      } else {
+        $("body, html").scrollTop(reqSectionPos);
+      }
+    };
+
+    var checkSection = function checkSection() {
+      $(".section").each(function () {
+        var $this = $(this),
+          topEdge = $this.offset().top - 80,
+          bottomEdge = topEdge + $this.height(),
+          wScroll = $(window).scrollTop();
+        if (topEdge < wScroll && bottomEdge > wScroll) {
+          var currentId = $this.data("section"),
+            reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+          reqLink
+            .closest("li")
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
+        }
+      });
+    };
+
+    $(".main-menu").on("click", "a", function (e) {
+      e.preventDefault();
+      showSection($(this).attr("href"), true);
+    });
+
+    $(window).scroll(function () {
+      checkSection();
+    });
+  </script>
+</body>
+
 </html>
