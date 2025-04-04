@@ -686,6 +686,8 @@ figure.snip1321.hover:after {
 /* Contact Me */
 .flex-endpage {
     height: 100%;
+    min-height: 100vh;
+
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -703,7 +705,6 @@ section.contact-me i {
 section.contact-me .quote {
     text-align: left;
     margin: 50px 0 ;
-
 }
 
 section.contact-me .quote p {
